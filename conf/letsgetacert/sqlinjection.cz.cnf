@@ -1,0 +1,6 @@
+CN=sqlinjection.cz
+PRIVKEY_CMD="ecparam -genkey -name prime256v1 -out %s"
+CERT_DIR=/etc/nginx/certs
+SUBJECT="/C=CZ/ST=Prague/L=Prague/O=sqlinjection.cz/emailAddress=$SUBJECT_EMAIL/CN=$CN"
+WEBROOT_DIR=/srv/www/$CN
+DOMAINS="site=sqlinjection.cz,www.sqlinjection.cz,sql-injection.cz,www.sql-injection.cz,sqli.cz,www.sqli.cz,sqlinjection.rocks,www.sqlinjection.rocks,sql-injection.rocks,www.sql-injection.rocks,sqli.rocks,www.sqli.rocks"
